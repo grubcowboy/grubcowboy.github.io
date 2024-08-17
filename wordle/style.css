@@ -1,0 +1,149 @@
+:root {
+    --yellow: #FFBF00;
+    --green: #00A36C;
+    --gray: #899499;
+    --silver: #C0C0C0;
+    --background: #E5E4E2;
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+body {
+    background-color: var(--background);
+    height: 100vh;
+}
+
+#container {
+    background-color: white;
+    margin: 5rem auto;
+    margin-bottom: 2.5rem;
+    border: 1.5px solid;
+    border-radius: 1px;
+    width: 12.5rem;
+}
+
+#title {
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: 0rem;
+    font-size: 2rem;
+}
+
+#guess-input {
+    text-align: center;
+    margin-bottom: .25rem;
+}
+
+#input {
+    border: 1.5px solid;
+    border-radius: 1px;
+    height: 1.5rem;
+    width: 5rem;
+    margin-right: 3px;
+    text-transform: uppercase;
+}
+
+button {
+    margin: auto 0;
+    height: 100%;
+    border: 0px;
+    padding: .25rem;
+    border-radius: 2px;
+}
+
+.glass {
+    background-image: linear-gradient(var(--silver), var(--background));
+    background-color: var(--silver);
+    position: relative;
+    display: inline-block;
+    box-shadow: 0px 1px 4px -2px #333;
+    text-shadow: 0px -.5px #333;
+}
+
+.glass:after {
+    content: '';
+    position: absolute;
+    border-radius: 2px 2px 0px 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+}
+
+.glass:hover {
+    background: linear-gradient(var(--yellow), var(--silver));
+    cursor: pointer;
+}
+
+table {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border-spacing: .25rem;
+}
+
+td {
+    border: 1.5px solid;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+}
+
+.row {
+    /* border: red solid; */
+    width: fit-content;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+}
+
+p {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1.5px solid;
+    text-align: center;
+    margin: 1.5px;
+    padding: 1px;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 435px) {
+
+    #container {
+        width: 15rem;
+        margin: 50% auto;
+        margin-bottom: 2.5rem;
+
+    }
+
+    #input {
+        width: 5rem;
+    }
+
+
+    table {
+        margin-top: .25rem;
+    }
+
+    td {
+        height: 2rem;
+        width: 2rem;
+        font-size: 1.25rem;
+    }
+
+    p {
+        width: 1.5rem;
+        height: 2rem;
+        line-height: 2rem;
+    }
+
+}
+
+@media (max-height: 675px) {
+    #container {
+        margin-top: 5rem;
+    }
+}
