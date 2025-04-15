@@ -42,8 +42,12 @@ a {
 
 .banner-tiles {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     height: 50vh;
+}
+
+.space {
+    border-right: 2px solid black;
 }
 
 p {
@@ -51,6 +55,15 @@ p {
     margin: auto;
     text-align: center;
     font-size: 2rem;
+}
+
+#quote {
+    font-size: 1rem;
+}
+
+#name-txt {
+    margin: auto;
+    width: 30rem;
 }
 
 .name {
@@ -94,6 +107,8 @@ p {
     color: black;
     width: 35rem;
     height: 35rem;
+    font-size: 1.4rem;
+    text-align: left;
 }
 
 .raised {
@@ -121,6 +136,9 @@ p {
 
 .jazz {
     width: 30rem;
+    height: 35rem;
+    text-align: left;
+    font-size: 1.5rem;
 }
 
 .up {
@@ -138,20 +156,24 @@ p {
     margin: auto;
 }
 
+#cite {
+    font-size: .5rem;
+}
+
 #blues {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 #weary-vid {
     padding: 0;
-    margin-top: 2rem;
-    margin-right: 30rem;
+    margin: 0 auto;
 }
 
+/* 
 #weary-txt {
     padding: 1rem;
     width: 35rem;
     margin-right: 20rem;
-}
+} */
