@@ -37,13 +37,17 @@ a {
 #banner {
     height: 100vh;
     display: flex;
-    justify-content: space-between;
 }
 
 .banner-tiles {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     height: 50vh;
+}
+
+#single-image {
+    display: none;
+    visibility: hidden;
 }
 
 .space {
@@ -59,7 +63,7 @@ p {
 
 #name-txt {
     margin: auto;
-    width: 30rem;
+    width: 30em;
 }
 
 .name {
@@ -102,14 +106,13 @@ p {
 }
 
 #rivers-txt {
-    margin-top: 4rem;
     background-color: whitesmoke;
     color: black;
     width: 35rem;
     height: 35rem;
     font-size: 1.4rem;
     text-align: left;
-    justify-self: center;
+    /* justify-self: center; */
 }
 
 .raised {
@@ -121,8 +124,9 @@ p {
 }
 
 #rivers-vid {
+    background-color: black;
     margin: auto;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
     grid-column: 2;
     justify-self: center;
 }
@@ -175,7 +179,8 @@ p {
 
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 481px) and (max-width: 1300px) {
+
     .name {
         font-size: 2rem;
     }
@@ -184,14 +189,77 @@ p {
         font-size: 1rem;
     }
 
-    #rivers-txt {
-        margin-top: 5px;
+    #tiles {
+        display: none;
+        visibility: hidden;
     }
+
+    #single-image {
+        display: flex;
+        align-items: center;
+        visibility: visible;
+        padding: 2em;
+    }
+
+    #weary {
+        height: 85vh;
+    }
+
+
+    #rivers {
+        display: flex;
+    }
+
+    #top {
+        display: none;
+        visibility: hidden;
+    }
+
+    #line {
+        display: none;
+        visibility: hidden;
+    }
+
+    .jazz {
+        font-size: 1em;
+        height: auto;
+        width: 20em;
+        height: 25em;
+    }
+
+    #angel {
+        width: 20em;
+        height: auto;
+    }
+
 }
 
-@media screen and (max-height: 770px) {
 
-    #rivers-txt {
-        margin-top: 5px;
+@media screen and (max-width: 480px) {
+    body {
+        background-color: greenyellow;
     }
+
+    #banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #tiles {
+        display: none;
+        visibility: hidden;
+    }
+
+    #single-image {
+        display: block;
+        visibility: visible;
+        margin: 2em auto;
+        height: 8.5em;
+    }
+
+    #name-txt {
+        width: 100vw;
+        margin-top: 20em;
+    }
+
 }
