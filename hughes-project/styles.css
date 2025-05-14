@@ -75,7 +75,6 @@ p {
 }
 
 .section {
-    width: 100%;
     height: 100vh;
 }
 
@@ -109,10 +108,9 @@ p {
     background-color: whitesmoke;
     color: black;
     width: 35rem;
-    height: 35rem;
+    height: fit-content;
     font-size: 1.4rem;
     text-align: left;
-    /* justify-self: center; */
 }
 
 .raised {
@@ -240,6 +238,15 @@ p {
         background-color: black;
     }
 
+    header {
+        height: 1rem;
+    }
+
+    nav {
+        top: -12px;
+        left: -35px;
+    }
+
     nav li {
         font-size: .5rem;
     }
@@ -247,6 +254,7 @@ p {
     #banner {
         display: flex;
         flex-direction: column;
+        height: auto;
     }
 
     #tiles {
@@ -266,4 +274,59 @@ p {
         margin-top: 20em;
     }
 
+    .section {
+        height: auto;
+    }
+
+    #rivers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #top {
+        height: 3rem;
+    }
+
+    #rivers-txt {
+        font-size: 1rem;
+        margin: 1rem auto;
+        width: calc(100vw - 1rem);
+    }
+
+    #rivers-vid {
+        width: auto;
+    }
+
+    #jazz {
+        flex-direction: column;
+    }
+
+    .jazz {
+        width: 20rem;
+        height: auto;
+        font-size: .75rem;
+    }
+
+    .up {
+        margin-top: 2rem;
+    }
+
+    .down {
+        margin-bottom: 1rem;
+    }
+
+    #angel {
+        width: 15rem;
+        height: auto;
+    }
+
+    #blues {
+        align-items: flex-start;
+        margin: 2rem;
+    }
+
+    #weary-vid {
+        width: auto;
+        height: auto;
+    }
 }
