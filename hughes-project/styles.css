@@ -122,9 +122,7 @@ p {
 }
 
 #rivers-vid {
-    background-color: black;
     margin: auto;
-    /* margin-top: 20vh; */
     grid-column: 2;
     justify-self: center;
 }
@@ -295,6 +293,7 @@ p {
 
     #rivers-vid {
         width: auto;
+        height: auto;
     }
 
     #jazz {
