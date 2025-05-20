@@ -1,0 +1,97 @@
+html {
+    background-color: black;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.raised {
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 1px;
+    box-shadow: -1px 1px whitesmoke, -2px 2px whitesmoke, -3px 3px whitesmoke, -4px 4px whitesmoke, -5px 5px whitesmoke;
+}
+
+span {
+    font-weight: bold;
+}
+
+#title-page {
+    font-family: "Pinyon Script", cursive;
+    width: 500px;
+    height: 600px;
+    background-color: #fafafa;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    margin: 0;
+    font-size: x-large;
+}
+
+#author {
+    margin: 0;
+    font-size: large;
+}
+
+.page {
+    background-color: #fafafa;
+    width: 500px;
+    height: auto;
+    margin-bottom: 10rem;
+}
+
+.two-page {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1480px) {
+    #title-page {
+        width: 350px;
+        height: 600px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .page {
+        width: auto;
+        margin-bottom: 3rem;
+    }
+
+    .two-page {
+        gap: 3rem;
+        width: calc(100vw - 4rem);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #title-page {
+        width: calc(100vw - 2rem);
+        margin-bottom: 5rem;
+    }
+
+    .two-page {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .page {
+        width: calc(100vw - 2rem);
+        height: auto;
+        margin-bottom: 5rem;
+    }
+}
