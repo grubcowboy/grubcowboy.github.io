@@ -10,6 +10,10 @@ body {
     align-items: center;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .raised {
     padding: 1rem;
     box-sizing: border-box;
@@ -18,13 +22,13 @@ body {
     box-shadow: -1px 1px whitesmoke, -2px 2px whitesmoke, -3px 3px whitesmoke, -4px 4px whitesmoke, -5px 5px whitesmoke;
 }
 
-span {
+.bold {
     font-weight: bold;
 }
 
 #title-page {
     font-family: "Pinyon Script", cursive;
-    width: 500px;
+    width: 400px;
     height: 600px;
     background-color: #fafafa;
     margin-top: 5rem;
@@ -47,7 +51,7 @@ span {
 
 .page {
     background-color: #fafafa;
-    width: 500px;
+    width: 400px;
     height: auto;
     margin-bottom: 10rem;
 }
