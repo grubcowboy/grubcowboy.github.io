@@ -62,29 +62,33 @@ body {
     gap: 10rem;
 }
 
-@media screen and (min-width: 481px) and (max-width: 1480px) {
+@media screen and (min-width: 730px) and (max-width: 1480px) {
     #title-page {
         width: 350px;
-        height: 600px;
+        height: 550px;
         margin-top: 2rem;
         margin-bottom: 3rem;
     }
 
     .page {
-        width: auto;
+        width: 350px;
         margin-bottom: 3rem;
     }
 
     .two-page {
         gap: 3rem;
-        width: calc(100vw - 4rem);
+        width: auto;
     }
 }
 
-@media screen and (max-width: 480px) {
+
+
+@media screen and (max-width: 730px) {
     #title-page {
-        width: calc(100vw - 2rem);
-        margin-bottom: 5rem;
+        width: 325px;
+        height: 550px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
     }
 
     .two-page {
@@ -94,8 +98,8 @@ body {
     }
 
     .page {
-        width: calc(100vw - 2rem);
+        width: 325px;
         height: auto;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 }
