@@ -28,8 +28,8 @@ body {
 
 #title-page {
     font-family: "Pinyon Script", cursive;
-    width: 400px;
-    height: 600px;
+    width: 425px;
+    height: 650px;
     background-color: #fafafa;
     margin-top: 5rem;
     margin-bottom: 10rem;
@@ -51,7 +51,7 @@ body {
 
 .page {
     background-color: #fafafa;
-    width: 400px;
+    width: 425px;
     height: auto;
     margin-bottom: 10rem;
 }
